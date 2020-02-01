@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: city-simulator
+spec:
+  containers:
+  - name: city-simulator
+    image: akka-city-sim

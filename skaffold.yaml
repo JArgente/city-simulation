@@ -1,0 +1,9 @@
+apiVersion: skaffold/v2alpha3
+kind: Config
+build:
+  artifacts:
+  - image: akka-city-sim
+deploy:
+  kubectl:
+    manifests:
+      - k8s-*

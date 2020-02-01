@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Desktop/demo (1)/demo" value="PREVIEW" />
+        <entry key="$USER_HOME$/Documents/Projects/Birthdays/escape" value="PREVIEW" />
+        <entry key="$USER_HOME$/Documents/Projects/Birthdays/escape2" value="PREVIEW" />
+        <entry key="$USER_HOME$/Documents/Projects/Motorbike meeting/webgateway" value="PREVIEW" />
+        <entry key="$USER_HOME$/Documents/Projects/pocs/complete" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/webgateway" value="PREVIEW" />
+        <entry key="$USER_HOME$/mn-example-kotlin" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Downloads/akka-quickstart-scala" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/akka-sample-cluster-docker-compose-scala" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/akka-samples-cluster-scala" value="PREVIEW" />
+        <entry key="$USER_HOME$/Projects/akka-city-sim" value="PREVIEW" />
+        <entry key="$USER_HOME$/Projects/akka-quickstart-scala" value="PREVIEW" />
+        <entry key="$USER_HOME$/Projects/hello-world" value="PREVIEW" />
+        <entry key="$USER_HOME$/Projects/lagom-hello/hello-world" value="PREVIEW" />
+        <entry key="$USER_HOME$/lambdaworld/zio-workshop" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
