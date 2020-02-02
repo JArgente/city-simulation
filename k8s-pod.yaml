@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: city-simulator
-    image: city-simulation
+    image: gcr.io/city-sim-jargente/city-simulation:e7008eacdb5e4295b084a4af1248bc4fb289e36b
