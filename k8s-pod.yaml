@@ -5,3 +5,4 @@ metadata:
 spec:
   containers:
   - name: city-simulator
+    image: $(image)
