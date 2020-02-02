@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll sources are invalidated.[0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all 7 sources: invalidated sources (7) exceeded 50.0% of all sources[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 7 Scala sources to /home/jorge/Projects/city-simulation/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.1.7:compile for Scala 2.13.1[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.1.7:compile for Scala 2.13.1[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 55b473a1 for Scala compiler version 2.13.1[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/resources.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/rt.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/sunrsasign.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/jsse.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/jce.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/charsets.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/jfr.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/classes:/home/jorge/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/Projects/city-simulation/target/scala-2.13/classes:/home/jorge/.ivy2/cache/com.typesafe.akka/akka-actor-typed_2.13/jars/akka-actor-typed_2.13-2.6.1.jar:/home/jorge/.ivy2/cache/com.typesafe.akka/akka-actor_2.13/jars/akka-actor_2.13-2.6.1.jar:/home/jorge/.ivy2/cache/com.typesafe/config/bundles/config-1.4.0.jar:/home/jorge/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.13/jars/scala-java8-compat_2.13-0.9.0.jar:/home/jorge/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.13/jars/akka-slf4j_2.13-2.6.1.jar:/home/jorge/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.29.jar:/home/jorge/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.2.3.jar:/home/jorge/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.2.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 7.865382333 s[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m

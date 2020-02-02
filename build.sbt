@@ -1,6 +1,6 @@
 enablePlugins(JavaAppPackaging)
 
-name := "akka-city-simulator"
+name := "city-simulation"
 
 version := "1.0"
 

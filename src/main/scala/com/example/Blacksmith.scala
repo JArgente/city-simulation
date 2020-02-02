@@ -20,7 +20,7 @@ class Blacksmith(context: ActorContext[City.CityInfo], actorInfo: ActorInfo)
   override def onMessage(msg: City.CityInfo): Behavior[City.CityInfo] = {
     msg match {
       case City.CityInfo(lifeQuality, richness, population, merchantActivity, replyTo) =>
-        context.log.info("Smith message {}", msg)
+        context.log.info("Smithers message {} other", msg)
         replyTo ! getNextDay(msg, actorInfo)
         Behaviors.setup(context => new Blacksmith(context,
           newStatus(msg, actorInfo)))

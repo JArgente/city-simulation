@@ -15,7 +15,7 @@ object City {
                      )
   def apply(): Behavior[ActorAction] =
     Behaviors.setup(context => new City(context,
-      City.CityInfo(5,6,3,4,null)))
+      City.CityInfo(8,6,5,4,null)))
 
 }
 
@@ -25,17 +25,17 @@ class City(context: ActorContext[ActorAction], cityInfo: CityInfo)
     msg match {
       case BlacksmithAction(quality, price, replyTo) =>
         val newCityInfo = getNewBlacksmithCityInfo(cityInfo, BlacksmithAction(quality, price, replyTo))
-        replyTo ! newCityInfo
+        //replyTo ! newCityInfo
         Behaviors.setup(context => new City(context,
           newCityInfo))
       case GuardAction(quality, price, replyTo) =>
         val newCityInfo = getNewGuardCityInfo(cityInfo, GuardAction(quality, price, replyTo))
-        replyTo ! newCityInfo
+        //replyTo ! newCityInfo
         Behaviors.setup(context => new City(context,
           newCityInfo))
       case TavernAction(quality, price, replyTo) =>
         val newCityInfo = getNewTavernCityInfo(cityInfo, TavernAction(quality, price, replyTo))
-        replyTo ! newCityInfo
+        //replyTo ! newCityInfo
         Behaviors.setup(context => new City(context,
           newCityInfo))
 

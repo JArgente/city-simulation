@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: city-simulator
-    image: akka-city-sim
+    image: city-simulation
