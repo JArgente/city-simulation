@@ -8,7 +8,7 @@ import com.example.ActorInfo.{Personality, Skill, Status}
 object Guard {
 
   def apply(): Behavior[City.CityInfo] =
-    Behaviors.setup(context => new Blacksmith(context,
+    Behaviors.setup(context => new Guard(context,
       ActorInfo(List(Skill("sword",3)),
         Personality(4,6,2,2,5),
         Status(2,3,5,1))))
@@ -22,7 +22,7 @@ class Guard(context: ActorContext[City.CityInfo], actorInfo: ActorInfo)
       case City.CityInfo(lifeQuality, richness, population, merchantActivity, replyTo) =>
         context.log.info("Guard message {}", msg)
         replyTo ! getNextDay(msg, actorInfo)
-        Behaviors.setup(context => new Blacksmith(context,
+        Behaviors.setup(context => new Guard(context,
           newStatus(msg, actorInfo)))
     }
   }

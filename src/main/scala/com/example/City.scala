@@ -43,7 +43,7 @@ class City(context: ActorContext[ActorAction], cityInfo: CityInfo)
         val blacksmith = context.spawn(Blacksmith(), s"blacksmith")
         val guard = context.spawn(Guard(), s"guard")
         val tavern = context.spawn(Tavern(), s"tavern")
-        val message = CityInfo(cityInfo.lifeQuality, cityInfo.richness, cityInfo.population, cityInfo.merchantActivity, this.context.self)
+        val message = CityInfo (cityInfo.lifeQuality, cityInfo.richness, cityInfo.population, cityInfo.merchantActivity, this.context.self)
         blacksmith ! message
         guard ! message
         tavern ! message
