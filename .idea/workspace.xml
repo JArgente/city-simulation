@@ -2,84 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1faab397-42a6-4b66-aa7e-4f9bff136840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gke-build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s-pod.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/bin/akka-city-simulator" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/bin/akka-city-simulator.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/lib/akka-city-simulator.akka-city-simulator-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/lib/ch.qos.logback.logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/lib/ch.qos.logback.logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/lib/com.typesafe.akka.akka-actor-typed_2.13-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/lib/com.typesafe.akka.akka-actor_2.13-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/lib/com.typesafe.akka.akka-slf4j_2.13-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/lib/com.typesafe.config-1.4.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/lib/org.scala-lang.modules.scala-java8-compat_2.13-0.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/lib/org.scala-lang.scala-library-2.13.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt/docker/lib/org.slf4j.slf4j-api-1.7.29.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$32d74eceafd21c380c45.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a49a606703bfe3dc04e5.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skaffold.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/example/Blacksmith.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/example/Blacksmith.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/example/City.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/example/City.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/akka-city-simulator/akka-city-simulator$sources/1.0/resolved.xml.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/akka-city-simulator/akka-city-simulator$sources/1.0/resolved.xml.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/akka-city-simulator/akka-city-simulator_2.13/1.0/resolved.xml.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/akka-city-simulator/akka-city-simulator_2.13/1.0/resolved.xml.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-compile-internal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-compile.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-debian.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-docker.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-linux.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-optional.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-provided.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-rpm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-runtime-internal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-runtime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-scala-tool.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-test-internal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-universal-docs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-universal-src.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-universal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator$sources-windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-compile-internal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-compile.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-debian.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-docker.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-linux.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-optional.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-provided.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-rpm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-runtime-internal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-runtime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-scala-tool.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-test-internal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-universal-docs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-universal-src.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-universal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/akka-city-simulator-akka-city-simulator_2.13-windows.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.13/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.13/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.13/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.13/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/unmanagedClasspath/$global/streams/export" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/unmanagedJars/$global/streams/export" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -108,6 +32,7 @@
         <counts>
           <entry key="Dockerfile" value="2" />
           <entry key="city-simulation" value="2" />
+          <entry key="gitignore" value="1" />
           <entry key="sbt" value="1" />
           <entry key="scala" value="4" />
           <entry key="yaml" value="8" />
@@ -117,7 +42,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="2" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="Scala" value="4" />
           <entry key="YAML" value="9" />
           <entry key="sbt" value="1" />
@@ -126,6 +51,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="3" />
+          <entry key="gitignore" value="1" />
           <entry key="json" value="17" />
           <entry key="sbt" value="3" />
           <entry key="scala" value="43" />
@@ -136,7 +62,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="17" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Scala" value="43" />
           <entry key="YAML" value="75" />
           <entry key="sbt" value="3" />
@@ -164,11 +90,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gke-build.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="116">
               <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
             </state>
           </provider>
         </entry>
@@ -236,6 +171,7 @@
         <option value="$PROJECT_DIR$/skaffold.yaml" />
         <option value="$PROJECT_DIR$/gke-build.yml" />
         <option value="$PROJECT_DIR$/gke-build.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -272,7 +208,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580656670728" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580656788580" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
   </component>
@@ -412,6 +348,7 @@
         <entry key="$USER_HOME$/Downloads/akka-samples-cluster-scala" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../akka-city-sim" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../akka-quickstart-scala" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$PROJECT_DIR$/../hello-world" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../lagom-hello/hello-world" value="PREVIEW" />
         <entry key="$USER_HOME$/lambdaworld/zio-workshop" value="PREVIEW" />
@@ -520,6 +457,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
         </state>
       </provider>
     </entry>
