@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1faab397-42a6-4b66-aa7e-4f9bff136840" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/gke-build.json" beforeDir="false" afterPath="$PROJECT_DIR$/gke-build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/k8s-pod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s-pod.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,7 +52,7 @@
         <counts>
           <entry key="Dockerfile" value="3" />
           <entry key="gitignore" value="1" />
-          <entry key="json" value="17" />
+          <entry key="json" value="60" />
           <entry key="sbt" value="3" />
           <entry key="scala" value="43" />
           <entry key="yaml" value="63" />
@@ -60,7 +61,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="17" />
+          <entry key="JSON" value="60" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Scala" value="43" />
           <entry key="YAML" value="75" />
@@ -89,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gke-build.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="176">
+              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -107,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/k8s-pod.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="92" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
+            <state relative-caret-position="90">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -168,9 +169,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/example/Blacksmith.scala" />
         <option value="$PROJECT_DIR$/skaffold.yaml" />
         <option value="$PROJECT_DIR$/gke-build.yml" />
-        <option value="$PROJECT_DIR$/gke-build.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/k8s-pod.yaml" />
+        <option value="$PROJECT_DIR$/gke-build.json" />
       </list>
     </option>
   </component>
@@ -207,7 +208,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580659397795" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580659876954" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
   </component>
@@ -367,16 +368,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25379092" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25379092" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.56122446" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.56122446" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32993197" />
@@ -449,17 +451,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gke-build.json">
+    <entry file="file://$PROJECT_DIR$/k8s-pod.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/k8s-pod.yaml">
+    <entry file="file://$PROJECT_DIR$/gke-build.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="92" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
+        <state relative-caret-position="176">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -1,13 +1,30 @@
 {
   "steps": [
-  {
-    "name": "gcr.io/cloud-builders/gke-deploy:stable",
-    "args": [
-      "run",
-      "--filename=k8s-pod.yaml",
-      "--location=europe-west1-c",
-      "--cluster=pre"
-    ]
-  }
+    {
+      "name": "gcr.io/cloud-builders/docker",
+      "args": [
+        "build",
+        "-t",
+        "gcr.io/city-sim-jargente/city-simulator:$SHORT_SHA",
+        "."
+      ]
+    },
+    {
+      "name": "gcr.io/cloud-builders/docker",
+      "args": [
+        "push",
+        "gcr.io/city-sim-jargente/city-simulator:$SHORT_SHA"
+      ]
+    },
+    {
+      "name": "gcr.io/cloud-builders/gke-deploy:stable",
+      "args": [
+        "run",
+        "--filename=k8s-pod.yaml",
+        "--image=gcr.io/city-sim-jargente/city-simulator:$SHORT_SHA",
+        "--location=europe-west1-c",
+        "--cluster=pre"
+      ]
+    }
   ]
 }
