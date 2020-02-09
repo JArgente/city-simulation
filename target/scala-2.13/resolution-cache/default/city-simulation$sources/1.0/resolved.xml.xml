@@ -4,7 +4,7 @@
 		module="city-simulation$sources"
 		revision="1.0"
 		status="integration"
-		publication="20200202162053"
+		publication="20200208223332"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

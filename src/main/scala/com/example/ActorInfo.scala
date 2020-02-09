@@ -23,4 +23,5 @@ object ActorInfo {
 
 case class ActorInfo(skills: List[Skill],
                      personality: Personality,
-                     status: Status)
+                     status: Status,
+                     money: Int)
