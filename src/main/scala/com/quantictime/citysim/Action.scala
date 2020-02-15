@@ -1,7 +1,7 @@
-package com.example
+package com.quantictime.citysim
 
 import akka.actor.typed.ActorRef
-import com.example.City.CityInfo
+import com.quantictime.citysim.City.CityInfo
 
 object Action {
 

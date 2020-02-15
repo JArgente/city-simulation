@@ -1,9 +1,9 @@
-package com.example
+package com.quantictime.citysim
 
-import akka.actor.typed.{ActorRef, Behavior}
 import akka.actor.typed.scaladsl.{AbstractBehavior, ActorContext, Behaviors}
-import com.example.Action._
-import com.example.City.CityInfo
+import akka.actor.typed.{ActorRef, Behavior}
+import com.quantictime.citysim.Action._
+import com.quantictime.citysim.City.CityInfo
 
 import scala.util.Random
 

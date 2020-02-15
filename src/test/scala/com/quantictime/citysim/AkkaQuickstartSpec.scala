@@ -1,8 +1,8 @@
-package com.example
+package com.quantictime.citysim
 
 import akka.actor.testkit.typed.scaladsl.ScalaTestWithActorTestKit
-import com.example.Action._
-import com.example.City.CityInfo
+import Action._
+import City.CityInfo
 import org.scalatest.WordSpecLike
 
 class AkkaQuickstartSpec extends ScalaTestWithActorTestKit with WordSpecLike {
