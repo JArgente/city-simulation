@@ -1,0 +1,19 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/jorge/Projects/city-simulation/target/scala-2.13/city-simulation_2.13-1.0-sources.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/example/City.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jorge/Projects/city-simulation/src/main/scala/com/example/City.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/example/ActorInfo.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jorge/Projects/city-simulation/src/main/scala/com/example/ActorInfo.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jorge/Projects/city-simulation/src/main/resources/logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/example/AkkaLaunch.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jorge/Projects/city-simulation/src/main/scala/com/example/AkkaLaunch.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/example/Guard.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jorge/Projects/city-simulation/src/main/scala/com/example/Guard.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/example/Blacksmith.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jorge/Projects/city-simulation/src/main/scala/com/example/Blacksmith.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/example/Action.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jorge/Projects/city-simulation/src/main/scala/com/example/Action.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/example/Tavern.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jorge/Projects/city-simulation/src/main/scala/com/example/Tavern.scala[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

@@ -1,0 +1,30 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t city-simulation:1.0 .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory /home/jorge/Projects/city-simulation/target/docker/stage[0m
+[0m[[0m[31merror[0m] [0m[0mWARNING: Could not setup log file in /home/jorge/.config/gcloud/logs, (IOError: [Errno 13] Permission denied: u'/home/jorge/.config/gcloud/logs/2020.02.01/21.00.34.635852.log')[0m
+[0m[[0m[31merror[0m] [0m[0mWARNING: Could not setup log file in /home/jorge/.config/gcloud/logs, (IOError: [Errno 13] Permission denied: u'/home/jorge/.config/gcloud/logs/2020.02.01/21.00.42.062763.log')[0m
+[0m[[0m[31merror[0m] [0m[0mWARNING: Could not setup log file in /home/jorge/.config/gcloud/logs, (IOError: [Errno 13] Permission denied: u'/home/jorge/.config/gcloud/logs/2020.02.01/21.00.44.588901.log')[0m
+[0m[[0m[31merror[0m] [0m[0mWARNING: Could not setup log file in /home/jorge/.config/gcloud/logs, (IOError: [Errno 13] Permission denied: u'/home/jorge/.config/gcloud/logs/2020.02.01/21.00.46.788443.log')[0m
+[0m[[0m[31merror[0m] [0m[0mWARNING: Could not setup log file in /home/jorge/.config/gcloud/logs, (IOError: [Errno 13] Permission denied: u'/home/jorge/.config/gcloud/logs/2020.02.01/21.00.49.298084.log')[0m
+[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  11.87MB[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/6 : FROM openjdk:latest[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 6adc576f6a58[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 2/6 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> f2346d57aba5[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/6 : ADD --chown=daemon:daemon opt /opt[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> d5767c40a58b[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 4/6 : USER daemon[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 7ba5ed41cb6b[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 7ba5ed41cb6b[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> c943bdad2294[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 5/6 : ENTRYPOINT ["/opt/docker/bin/city-simulation"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in ba73a515fba9[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container ba73a515fba9[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 471533b36f18[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 6/6 : CMD [][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in c8a5eae0faa9[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container c8a5eae0faa9[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> d29df0a2e253[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully built d29df0a2e253[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully tagged city-simulation:1.0[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt image city-simulation with tags [1.0][0m

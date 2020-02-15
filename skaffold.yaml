@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2alpha3
+kind: Config
+metadata:
+  name: city-simulation
+build:
+  googleCloudBuild:
+    projectId: city-sim-jargente
+  artifacts:
+  - image: city-simulation
+    context: target/docker/stage
+deploy:
+  kubectl:
+    manifests:
+    - k8s-pod.yaml

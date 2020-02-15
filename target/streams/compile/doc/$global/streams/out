@@ -1,0 +1,17 @@
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation to /home/jorge/Projects/city-simulation/target/scala-2.13/api...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.1.7:compile for Scala 2.13.1[0m
+[0m[[0m[0mdebug[0m] [0m[0mCalling Scaladoc with arguments:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-d[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/Projects/city-simulation/target/scala-2.13/api[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/resources.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/rt.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/sunrsasign.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/jsse.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/jce.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/charsets.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/lib/jfr.jar:/home/jorge/.sdkman/candidates/java/8.0.232-zulu/jre/classes:/home/jorge/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/.ivy2/cache/com.typesafe.akka/akka-actor-typed_2.13/jars/akka-actor-typed_2.13-2.6.1.jar:/home/jorge/.ivy2/cache/com.typesafe.akka/akka-actor_2.13/jars/akka-actor_2.13-2.6.1.jar:/home/jorge/.ivy2/cache/com.typesafe/config/bundles/config-1.4.0.jar:/home/jorge/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.13/jars/scala-java8-compat_2.13-0.9.0.jar:/home/jorge/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.13/jars/akka-slf4j_2.13-2.6.1.jar:/home/jorge/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.29.jar:/home/jorge/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.2.3.jar:/home/jorge/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.2.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/Projects/city-simulation/src/main/scala/com/example/Action.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/Projects/city-simulation/src/main/scala/com/example/ActorInfo.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/Projects/city-simulation/src/main/scala/com/example/AkkaLaunch.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/Projects/city-simulation/src/main/scala/com/example/Blacksmith.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/Projects/city-simulation/src/main/scala/com/example/City.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/Projects/city-simulation/src/main/scala/com/example/Guard.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/jorge/Projects/city-simulation/src/main/scala/com/example/Tavern.scala[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation successful.[0m
