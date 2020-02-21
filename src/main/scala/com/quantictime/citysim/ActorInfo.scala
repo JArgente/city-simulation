@@ -1,6 +1,7 @@
 package com.quantictime.citysim
 
 import com.quantictime.citysim.ActorInfo.{Personality, Skill, Status}
+import com.quantictime.citysim.City.Mission
 
 object ActorInfo {
 
@@ -19,4 +20,7 @@ object ActorInfo {
 case class ActorInfo(skills: List[Skill],
                      personality: Personality,
                      status: Status,
-                     money: Int)
+                     mission: Option[Mission],
+                     money: Int,
+                     dead: Boolean
+                     )

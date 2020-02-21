@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, universal, universal-docs, universal-src, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20200201210024"/>
+		date="20200221214426"/>
 	<dependencies>
 		<module organisation="com.typesafe.akka" name="akka-actor-typed_2.13">
 			<revision name="2.6.1" status="release" pubdate="20191206114431" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io/" extra-info.apiURL="https://doc.akka.io/api/akka/2.6.1" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">

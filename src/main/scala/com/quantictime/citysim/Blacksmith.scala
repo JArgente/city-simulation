@@ -4,7 +4,7 @@ import akka.actor.typed.Behavior
 import akka.actor.typed.scaladsl.{AbstractBehavior, ActorContext, Behaviors}
 import com.quantictime.citysim.Action.BlacksmithAction
 import com.quantictime.citysim.ActorInfo.{Personality, Skill, Status}
-import com.quantictime.citysim.City.CityInfo
+import com.quantictime.citysim.City.{CityInfo, Mission}
 
 import scala.util.Random
 
@@ -13,7 +13,7 @@ object Blacksmith {
     Behaviors.setup(context => new Blacksmith(context,
       ActorInfo(List(Skill("smith",3)),
         Personality(4,6),
-        Status(2,3),10),
+        Status(2,3),None,10,false),
       context.system.settings.config.getInt("timeMultiplyer")))
 }
 
@@ -22,27 +22,73 @@ class Blacksmith(context: ActorContext[City.CityInfo], actorInfo: ActorInfo, tim
 
   override def onMessage(msg: City.CityInfo): Behavior[City.CityInfo] = {
     msg match {
-      case City.CityInfo(lifeQuality, richness, population, merchantActivity, tavernOpen, replyTo) =>
-        val newStatusInfo= newStatus(msg, actorInfo)
-        routine(newStatusInfo, msg)
-        replyTo ! getNextDay(msg, newStatusInfo)
-        context.log.info("SMITH MONEY: "+newStatusInfo.money)
-        Behaviors.setup(context => new Blacksmith(context, newStatusInfo, timeMultiplyer))
+      case City.CityInfo(lifeQuality, richness, population, merchantActivity, tavernOpen, missions, replyTo) =>
+        if(actorInfo.mission.isDefined){
+          context.log.info("SMITH Continues in a mission: " + actorInfo.mission.get.duration+" days left")
+          val newStatusInfo =
+            if(actorInfo.mission.get.duration>1){
+
+              ActorInfo(
+                actorInfo.skills,
+                Personality(actorInfo.personality.fear,
+                  actorInfo.personality.greed),
+                Status(actorInfo.status.tedious,
+                  actorInfo.status.fame),
+                Some(Mission(
+                  actorInfo.mission.get.danger,
+                  actorInfo.mission.get.reward,
+                  actorInfo.mission.get.duration-1
+                )),
+                actorInfo.money,
+                Random.nextInt(10)<=actorInfo.mission.get.danger
+              )
+            }else {
+                  context.log.info("Smithers Return from the adventure ")
+                ActorInfo(
+                  actorInfo.skills,
+                  Personality(actorInfo.personality.fear,
+                    actorInfo.personality.greed),
+                  Status(actorInfo.status.tedious,
+                    actorInfo.status.fame),
+                  None,
+                  actorInfo.money + actorInfo.mission.get.reward,
+                  Random.nextInt(10)<1
+                )
+              }
+              Behaviors.setup(context => new Blacksmith(context, newStatusInfo, timeMultiplyer))
+            }
+            else {
+              val newStatusInfo =
+                newStatus(msg, actorInfo)
+              routine(newStatusInfo, msg)
+              replyTo ! getNextDay(msg, newStatusInfo)
+              context.log.info("SMITH MONEY: " + newStatusInfo.money)
+              Behaviors.setup(context => new Blacksmith(context, newStatusInfo, timeMultiplyer))
+            }
     }
   }
 
   private def getNextDay(cityInfo: City.CityInfo, actorInfo: ActorInfo): BlacksmithAction = {
+      if(actorInfo.dead) {
+        context.log.info("Smithers died...")
+        BlacksmithAction(0, 0, true, None, this.context.self)
+      }
       if(actorInfo.money>7) {
         context.log.info("Smithers raises prices...")
-        BlacksmithAction(1,1,false,this.context.self)
+        BlacksmithAction(1,1,false,None,this.context.self)
       } else if(actorInfo.money > 4) {
-        BlacksmithAction(1,0,false,this.context.self)
+        BlacksmithAction(1,0,false,None,this.context.self)
       } else if(actorInfo.money <= 1) {
-        context.log.info("Smithers closes...")
-        BlacksmithAction(0,0,true,this.context.self)
+        if(actorInfo.mission.isDefined){
+          context.log.info("Smithers goes to an adventure...")
+          BlacksmithAction(0, 0, false, Some(actorInfo.mission.get), this.context.self)
+        }else {
+          context.log.info("Smithers closes...")
+          BlacksmithAction(0, 0, true, None, this.context.self)
+        }
       }else {
         context.log.info("Smithers lowers prices...")
-        BlacksmithAction(0, -1, false, this.context.self)
+        BlacksmithAction(0, -1, false,None, this.context.self)
       }
   }
 
@@ -58,28 +104,44 @@ class Blacksmith(context: ActorContext[City.CityInfo], actorInfo: ActorInfo, tim
   }
 
   private def newStatus(cityInfo: City.CityInfo, actorInfo: ActorInfo): ActorInfo = {
-    if(cityInfo.population > 7)
+    val newInfo =
+      if (cityInfo.population > 7)
+        ActorInfo(
+          actorInfo.skills,
+          Personality(actorInfo.personality.fear,
+            actorInfo.personality.greed + 1),
+          Status(actorInfo.status.tedious - 1,
+            actorInfo.status.fame),
+          None,
+          actorInfo.money + Random.nextInt(cityInfo.population),
+          Random.nextInt(10)<1
+        )
+      else if (cityInfo.population < 4)
+        ActorInfo(
+          actorInfo.skills,
+          Personality(actorInfo.personality.fear - 1,
+            actorInfo.personality.greed + 1),
+          Status(actorInfo.status.tedious,
+            actorInfo.status.fame + 1),
+          None,
+          actorInfo.money - 4 - Random.nextInt(cityInfo.population),
+          Random.nextInt(10)<1
+        )
+      else
+        actorInfo
+    if (newInfo.money <= 1 && cityInfo.misions.nonEmpty && cityInfo.misions.minBy(_.danger).danger >= actorInfo.personality.fear) {
       ActorInfo(
         actorInfo.skills,
         Personality(actorInfo.personality.fear,
-          actorInfo.personality.greed+1),
-        Status(actorInfo.status.tedious-1,
-          actorInfo.status.fame),
-        actorInfo.money+Random.nextInt(cityInfo.population)
-      )
-    else if(cityInfo.population < 4)
-      ActorInfo(
-        actorInfo.skills,
-        Personality(actorInfo.personality.fear-1,
-          actorInfo.personality.greed+1),
+          actorInfo.personality.greed),
         Status(actorInfo.status.tedious,
-          actorInfo.status.fame+1),
-        actorInfo.money-4-Random.nextInt(cityInfo.population)
+          actorInfo.status.fame),
+        Some(cityInfo.misions.minBy(_.danger)),
+        actorInfo.money,
+        Random.nextInt(10)<1
       )
-    else
-      actorInfo
-
+    }else
+        newInfo
   }
-
   override def who(): String = "Blacksmith"
 }
